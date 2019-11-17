@@ -229,6 +229,9 @@ public class PhoneStatusBarPolicy implements Callback, Callbacks,
                 mContext.getString(R.string.accessibility_status_bar_hotspot));
         mIconController.setIconVisibility(mSlotHotspot, mHotspot.isHotspotEnabled());
 
+        mIconController.setIcon("Power", R.drawable.pop_vortex2, "Turn Off/Restart");
+        mIconController.setIconVisibility("Power", true);
+
         // managed profile
         mIconController.setIcon(mSlotManagedProfile, R.drawable.stat_sys_managed_profile_status,
                 mContext.getString(R.string.accessibility_managed_profile));
